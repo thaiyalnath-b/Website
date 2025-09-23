@@ -5,6 +5,8 @@
 }
 
 body {
+    background: rgb(235, 234, 234);
+    
 
     .navbar {
         background-color: black;
@@ -12,11 +14,12 @@ body {
 
     .navbar-brand {
         font-family: 'Times New Roman', Times, serif;
-
+        display: flex;
         span {
             font-size: 30px;
         }
     }
+    
 
     .sch {
 
@@ -112,10 +115,9 @@ main {
     }
 
     .card {
-
-
         img {
             height: 250px;
+            object-fit: cover;
         }
 
         .card-body {
@@ -125,32 +127,32 @@ main {
 
     .card {
         transition: 500ms;
+        margin: 15px 0px;
+        border: none;
+        
     }
 
     .card:hover {
-        transform: scale(1.05);
+        transform: scale(1.02);
         transition-duration: 200ms;
-        box-shadow: 3px 3px 3px 2px rgba(100, 99, 99, 0.44);
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+         rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, 
+         rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
     }
 
     .top {
         text-align: center;
-        padding-top: 20px;
+        padding-top: 25px;
 
         a {
             text-decoration: none;
-            border: 1px solid aqua;
-            padding: 15px;
-            background-color: aqua;
-            color: black;
+            border: none;
+            padding: 10px;
+            background-color: rgb(7, 93, 63);
+            color: white;
             font-size: 20px;
             border-radius: 10px;
         }
-
-        /* a:hover {
-            box-shadow: 1px 2px 1px 0.5px , -1px -2px 1px 0.5px ;
-            overflow: hidden;
-        } */
     }
 }
 
