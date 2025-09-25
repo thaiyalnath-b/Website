@@ -6,7 +6,7 @@
 
 body {
     background: rgb(235, 234, 234);
-    
+
 
     .navbar {
         background-color: black;
@@ -15,11 +15,14 @@ body {
     .navbar-brand {
         font-family: 'Times New Roman', Times, serif;
         display: flex;
+
         span {
             font-size: 30px;
+            font-family: 'Times New Roman', Times, serif;
+            font-style: italic;
         }
     }
-    
+
 
     .sch {
 
@@ -129,20 +132,32 @@ main {
         transition: 500ms;
         margin: 15px 0px;
         border: none;
-        
     }
 
     .card:hover {
+        cursor: pointer;
         transform: scale(1.02);
         transition-duration: 200ms;
         box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
-         rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, 
-         rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+            rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+            rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    }
+
+    .btn {
+        transition: transform 1s ease,
+        background-color 2s ease 0s;
+    }
+
+    .btn:hover {
+        cursor: default;
+        background-color: white;
+        color: black;
     }
 
     .top {
         text-align: center;
         padding-top: 25px;
+        transform: skewX(-15deg);
 
         a {
             text-decoration: none;
@@ -164,10 +179,6 @@ footer {
         width: 100%;
     }
 
-    @media screen and (max-width:548px) {
-        .
-    }
-
     .container-fluid {
         width: 100%;
         margin: 0;
@@ -184,16 +195,16 @@ footer {
                 align-items: left;
             }
 
-
             span {
-                width: 50px;
-                color: aqua;
+                color: white;
+                font-size: 16px;
+                padding-bottom: 6px;
             }
 
             a {
                 width: fit-content;
                 text-decoration: none;
-                font-size: 10px;
+                font-size: 12px;
                 color: white;
                 text-align: left;
                 padding-bottom: 2px;
@@ -215,8 +226,8 @@ footer {
 
     .link {
         display: flex;
-        flex-direction: row;
         justify-content: center;
+        align-items: center;
         gap: 10px;
 
         a {
@@ -238,17 +249,18 @@ footer {
     }
 
     .cpy {
-        width: fit-content;
-        margin: auto;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
         height: 15px;
-        padding-top: 10px;
+        padding-top: 30px;
         color: white;
         text-align: center;
         font-size: 10px;
         padding-bottom: 20px;
     }
 
-    .cpy:hover {
+    .rights:hover {
         transform: scale(0.98);
         transition-duration: 300ms;
         text-decoration: underline;
