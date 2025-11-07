@@ -132,6 +132,7 @@ main {
         transition: 500ms;
         margin: 15px 0px;
         border: none;
+        transition: all 0.3s ease;
     }
 
     .card:hover {
@@ -145,7 +146,7 @@ main {
 
     .btn {
         transition: transform 1s ease,
-        background-color 2s ease 0s;
+        background-color 1s ease 0s;
     }
 
     .btn:hover {
@@ -158,6 +159,8 @@ main {
         text-align: center;
         padding-top: 25px;
         transform: skewX(-15deg);
+        position: absolute;
+        right: 10px;
 
         a {
             text-decoration: none;
